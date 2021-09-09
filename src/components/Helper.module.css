@@ -1,0 +1,40 @@
+.d_grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.7rem;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .d_grid {
+    display: grid;
+    grid-template-columns: 33vh 33vh 33vh;
+    gap: 1.7rem;
+  }
+}
+
+.card_adjust {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card_adjust h1,
+h2,
+h3 {
+  font-size: 20px;
+}
+
+.card_adjust img {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+
+@media (max-width: 992px) {
+  .card_adjust img {
+    width: 100%;
+    height: 50vw;
+    object-fit: cover;
+  }
+}
